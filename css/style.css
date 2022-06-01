@@ -1,3 +1,14 @@
+/* Colors: 
+
+Background color: #fafafa;
+title-color:#4a4a4a;
+header-paragragh-text: #7f7f7f;
+
+
+
+
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -21,66 +32,54 @@ body {
 }
 .wrapper > * {
 	padding: 10px;
-	margin: 10px 0 10px;
+	margin: 0px 0 10px;
 	flex: 1 100%;
 }
 
 .hero-section {
 	width: 100vw;
-	background-color: #fafafa;
+	Background-color: #fafafa;
 }
 
-.hero-content {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	flex-grow: 1;
+h1 {
+	text-align: center;
+	font-size: 22px;
+	font-weight: 900;
+	Background: #fafafa;
 }
 
 .student-name {
-	font-size: 2rem;
-	font-weight: 900;
+	text-decoration: none;
 	color: #4a4a4a;
+}
+
+.student-name:link,
+.student-name:visited {
+	font-size: 35px;
+	background-color: #fafafa;
 }
 
 /* Navbar Section */
 .navbar-container {
-	display: flex;
-}
-
-.navbar__list {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-
-	flex-basis: ;
-	background: #ca1818;
-	border-radius: 5px;
+	padding: 10px;
+	margin: 0px 0px 20px 0px;
 }
 
 .navbar {
+	background-color: rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 5px;
+	margin: 8px;
+}
+
+.navbar-links:link,
+.navbar-links:visited {
+	color: #4a4a4a;
+	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: 900;
 }
-
-/* border color for identification */
-.hero-section {
-	border: 3px solid #c23c3c;
-}
-.link-1 {
-	border: 3px solid #c23c3c;
-}
-.navbar__list {
-	color: white;
-	border: 3px solid #0300b94b;
-}
-
-/* .header-text {
-	border: 3px solid #069731;
-} */
+/* border colors for identification */
 
 /* +++++++++++++ SUB-CONTENT ++++++++++++++ */
 
@@ -90,12 +89,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1.2rem;
-	padding: 10px;
 	margin: 0 auto;
 }
 
 .header-img {
 	width: 200px;
+	margin: 0 auto;
 }
 
 .header-text {
