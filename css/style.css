@@ -4,10 +4,16 @@ Background color: #fafafa;
 title-color:#4a4a4a;
 header-paragragh-text: #7f7f7f;
 
-
-
-
 */
+
+:root {
+	/* body section */
+	--background-color: #fafafa;
+
+	/* Portfolio Section */
+	--main-title: #4a4a4a;
+	--main-par: #565656;
+}
 
 * {
 	margin: 0;
@@ -24,6 +30,10 @@ body {
 	letter-spacing: .1px;
 }
 
+body p {
+	width: 32ch;
+}
+
 /* +++++++++++++ HEADER SECTION ++++++++++++++ */
 /* +++++++++++++ TOP-CONTENT ++++++++++++++ */
 .wrapper {
@@ -32,20 +42,22 @@ body {
 	text-align: center;
 }
 .wrapper > * {
-	padding: 10px;
-	margin: 0px 0 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
 	flex: 1 100%;
 }
 
 .hero-section {
 	width: 100vw;
-	Background-color: #fafafa;
+	Background-color: var(--background-color);
+	margin-bottom: 35px;
 }
 
 h1 {
 	text-align: center;
 	font-weight: 900;
-	Background: #fafafa;
+	Background: var(--background-color);
 }
 
 .student-name {
@@ -57,12 +69,14 @@ h1 {
 .student-name:visited {
 	margin-top: 2px;
 	font-size: 30px;
-	background-color: #fafafa;
+	background-color: var(--background-color);
 }
 
 .student-name:hover,
 .student-name:active {
-	font-weight: 900;
+	margin-top: 2px;
+	font-size: 30px;
+	background-color: var(--background-color);
 }
 
 /* Navbar Section */
@@ -101,7 +115,7 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	gap: 1.1rem;
-	margin: 0px auto 30px auto;
+	margin-bottom: 35px;
 }
 
 .header-img {
@@ -130,7 +144,7 @@ h1 {
 	font-size: 20px;
 	font-weight: 900;
 	color: #4a4a4a;
-	margin: 30px 0 30px;
+	margin-bottom: 30px;
 }
 
 /* +++++++++++++ MAIN PORTFOLIO Images SECTION ++++++++++++++ */
@@ -140,25 +154,27 @@ h1 {
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
-	margin: 0px auto 30px auto;
+	gap: .5rem;
+	flex-grow: 1;
+	margin-bottom: 25px;
+	padding-top: 10px;
 }
 
-.portfolio-img-1 {
-	width: 328px;
-	margin-top: 20px;
+.portfolio-img {
+	width: 290px;
+	height: 150px;
+	margin-bottom: 30px;
 }
 
 /* the title and paragragh texts are the same, just modify the font-weight with less bold */
-.portfolio-img-1-header {
+.portfolio-img-header {
 	font-size: 20px;
 	font-weight: 700;
-	color: #4a4a4a;
-	margin: 30px 0 30px;
+	color: var(--main-title);
 }
 
-.portfolio-img-1-par {
+.portfolio-img-par {
 	text-align: center;
 	font-size: 16px;
-	color: #4a4a4a;
+	color: var(--main-par);
 }
