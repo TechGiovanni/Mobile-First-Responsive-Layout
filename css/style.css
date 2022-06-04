@@ -374,13 +374,23 @@ hr {
 		margin-bottom: 0px;
 	}
 
+	/* footer Section */
+
+	.footer-text {
+		font-size: 15px;
+		width: 50ch;
+		text-align: center;
+		margin-bottom: 20px;
+		color: var(--header-p);
+	}
 	.footer-nav {
 		display: none;
 	}
 
+	.new-footer,
 	.footer-768 {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		padding-top: 3px solid #b64b4b;
 		padding-left: 16px;
 		padding-right: 16px;
@@ -392,7 +402,7 @@ hr {
 		font-size: 15px;
 		font-weight: 700;
 		margin-top: 20px;
-		margin-bottom: 25px;
+		margin-bottom: 80px;
 	}
 
 	.footer-768:link,
