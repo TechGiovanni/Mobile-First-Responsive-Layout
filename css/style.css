@@ -25,7 +25,7 @@ header-paragragh-text: #7f7f7f;
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	line-height: 1.6;
 	height: 100vh;
 	font-size: 10px;
@@ -179,7 +179,8 @@ h1 {
 .portfolio-img-header {
 	font-size: 1.1rem;
 	color: var(--main-title);
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
 }
 
 .portfolio-img-par {
@@ -221,6 +222,10 @@ h1 {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	line-height: 1.5;
+}
+
+.footer-section a {
+	text-decoration: none;
 }
 
 .footer-title {
