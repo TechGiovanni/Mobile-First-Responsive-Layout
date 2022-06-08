@@ -48,6 +48,7 @@ body {
 
 .hero-section {
 	width: 100vw;
+	height: auto;
 	Background-color: var(--background-color);
 	margin-bottom: 3.5rem;
 }
@@ -138,7 +139,7 @@ h1 {
 	margin-bottom: 1rem;
 }
 
-.main-content {
+/* .main-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -147,7 +148,7 @@ h1 {
 	background-color: #fff;
 	padding-left: 1rem;
 	padding-right: 1rem;
-}
+} */
 
 .Portfolio-text-box {
 	font-size: 1.1rem;
@@ -359,8 +360,11 @@ hr {
 	}
 
 	/* ++++++++ Main Portfolio Section ++++++++  
-
 	 image section  1  */
+
+	.Portfolio-text-box {
+		display: inline-block;
+	}
 
 	.main-flex {
 		display: flex;
@@ -496,6 +500,12 @@ hr {
 		align-items: center;
 	}
 
+	.Portfolio-text-box {
+		display: inline-block;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.porfolio {
 		display: flex;
 		flex-flow: column wrap;
@@ -507,7 +517,7 @@ hr {
 		margin-bottom: 25px;
 		padding-top: 10px;
 	}
-	.main-content {
+	/* .main-content {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -516,6 +526,14 @@ hr {
 		background-color: #fff;
 		padding-left: 4rem;
 		padding-right: 4rem;
+	} */
+	.hero-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.navbar-container {
 	}
 
 	.navbar {
@@ -523,10 +541,11 @@ hr {
 		font-size: 1rem;
 		padding: .5rem 3px;
 		margin-bottom: .4rem;
-		margin-left: .2rem;
-		margin-right: .2rem;
+		margin-left: 1.2rem;
+		margin-right: 1.3rem;
 		border-radius: 5px;
 	}
+
 	.footer-768 h3 {
 		font-size: 15px;
 		position: sticky;
